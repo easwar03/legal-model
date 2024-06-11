@@ -40,7 +40,7 @@ def recognize_entities(text):
 
 # Main processing function
 def main():
-    df = pd.read_csv('legal_text - Sheet1.csv')
+    df = pd.read_csv('legal_text.csv')
     df_subset = df[['case_text']].dropna()
 
     # Process each document
