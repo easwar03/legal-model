@@ -11,8 +11,8 @@ nltk.download('wordnet')
 tokenizer_summarization = AutoTokenizer.from_pretrained("Falconsai/text_summarization")
 model_summarization = AutoModelForSeq2SeqLM.from_pretrained("Falconsai/text_summarization")
 
-tokenizer_sentiment = AutoTokenizer.from_pretrained("saved_model")
-model_sentiment = AutoModelForSequenceClassification.from_pretrained("saved_model")
+tokenizer_sentiment = AutoTokenizer.from_pretrained("siebert/sentiment-roberta-large-english")
+model_sentiment = AutoModelForSequenceClassification.from_pretrained("siebert/sentiment-roberta-large-english")
 
 ner_model = AutoModelForTokenClassification.from_pretrained("dslim/bert-large-NER")
 ner_tokenizer = AutoTokenizer.from_pretrained("dslim/bert-large-NER")
