@@ -1,11 +1,6 @@
 import pandas as pd
-import nltk
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForTokenClassification, AutoModelForSequenceClassification
 
-# Ensure NLTK data is downloaded
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
 
 # Load models and tokenizers
 tokenizer_summarization = AutoTokenizer.from_pretrained("Falconsai/text_summarization")
@@ -45,7 +40,7 @@ def recognize_entities(text):
 
 # Main processing function
 def main():
-    df = pd.read_csv('legal_text - Sheet1.csv')  # Update with your file path
+    df = pd.read_csv('legal_text - Sheet1.csv')
     df_subset = df[['case_text']].dropna()
 
     # Process each document
