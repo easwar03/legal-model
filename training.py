@@ -16,7 +16,7 @@ def compute_metrics(eval_predictions):
 
 
 raw_datasets = load_dataset("glue", "sst2")
-checkpoint = "saved_model"
+checkpoint = "siebert/sentiment-roberta-large-english"
 tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 
 small_train_dataset = raw_datasets["train"].shuffle(seed=42).select([i for i in list(range(5000))])
