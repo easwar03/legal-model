@@ -8,7 +8,7 @@ This progress report outlines the current status of the Legal Document Analysis 
 Initial prototypes for basic analysis functionalities were developed using various LLMs hosted by Hugging Face instead of GPT-3 due to better suitability for this project.
 
 ### Functionality Implementation
-- **Summarization**: Implemented using `Falconsai/text_summarization`, a T5 transformer-based pre-trained model.
+- **Summarisation**: Implemented using `Falconsai/text_summarization`, a T5 transformer-based pre-trained model.
 - **Sentiment Analysis**: Implemented using `siebert/sentiment-roberta-large-english`, a BERT-based pre-trained model. Fine-tuning of this model was implemented.
 - **Named Entity Recognition**: Implemented using `dslim/bert-large-NER`, also a BERT-based pre-trained model.
 
